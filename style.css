@@ -1,0 +1,352 @@
+body{background-color:rgb(0,0,0);
+}
+div{
+    display:flex;
+}
+.box{
+    gap:10px;
+}
+.bg-grey{
+    background-color: rgb(18,18,18);
+}
+.mainLeft{
+    position:fixed;
+    z-index:3;
+  flex-direction: column;
+  gap:10px;
+    width: 22%;
+    padding: 0px;
+    min-height: 100%;
+    left:3;
+    
+    
+}
+.mainLeft1{   
+    padding:0px;
+    border-radius: 8px;
+    flex-direction:column;
+    gap:20px;
+    
+    }
+.hidden{
+  width:88%;
+  justify-content: space-between;  
+ align-items: center;
+ margin-top: 15px;
+ padding: 0;
+ margin-left:20px;
+}
+.close{
+    align-items: center;
+    display:none;
+
+}
+.spotifyLogo,.home,.search.premium,.displayHead1,.discHead{
+   gap:5px;
+   font-family: "Montserrat variant0", Tofu;
+align-items: center;
+}
+.card1:hover{
+    background-color: rgb(0,0,0);
+
+}
+.Support:hover,.premium:hover,.Download:hover,.displayHead2:hover,.arrowLeft:hover,.library:hover,.plus:hover,.close:hover,.arrowRight:hover,.signup:hover,.login:hover,.spotifyLogo:hover,.home:hover,.search:hover{
+color:white;
+cursor:pointer;
+}
+.spotifyLogo{
+    font-weight: bolder;
+    font-size: medium;
+margin-top: 20px;
+display: flex;
+gap:3px;   
+}
+.home,.search{
+    margin-left:20px;
+    display:flex;
+    gap:3px;
+}
+.home{
+    font-weight: bolder;
+}
+.search{
+    font-weight: 100;
+margin-bottom: 10px;
+}
+.mainLeft2{
+    border-radius: 8px;
+    flex-direction: column;
+    min-height: 70vh;
+}
+.leftContent2{
+    justify-content: space-between;
+}
+.Left2content{
+    gap:20px;
+    
+}
+.libLogo{
+    margin-left:20px;
+}
+.library,.plus,.libLogo{
+    margin-top: 15px;
+  color:rgb(138,138,138);
+  justify-content: center;
+  font-size: large;
+  font-weight: bolder;
+ }
+ .plus{
+    font-size: large;
+    margin-right: 3px;
+ }
+.mainRight{
+    position: absolute;
+    background-color: rgb(0,0,0);
+    flex-direction: column;
+    gap:0px;
+    right:0;
+
+    width: 76.5%;
+    padding: 0px;
+    height:100%;
+}
+.loginbar{
+    z-index:2;
+    position: fixed;
+    background-color: rgb(16,16,16) ;
+    width:75.5%;
+    padding:0px;
+    border-radius: 8px 8px 0px 0px;
+   gap: 0px;
+   justify-content:space-between;
+   align-items: center;
+}
+.arrow{
+    margin-left: 5px;
+    gap:5px;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger{
+    display:flex;
+}
+.arrowLeft,.arrowRight{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding:10px;
+    background-color: rgb(0,0,0);
+    border-radius: 50%;
+    font-weight: bolder;
+}
+.nav{
+    gap: 10px;
+
+}
+.PSD{    
+    gap:10px;
+    justify-content: space-between;
+    background-color: rgb(16,16,16) ;
+    align-items: center;
+
+}
+.button{
+    align-items: center; 
+    gap:10px;
+}
+.premium,.Support,.Download{
+    background-color: rgb(16,16,16) ;
+    color:rgb(138,138,138);
+
+   font-size:large;
+   font-weight: bolder;
+   padding:0px;
+}
+.signup,.login{
+    color:rgb(138,138,138);
+    
+   font-size:larger;
+   font-weight: bolder;
+}
+.login{
+    color:white;
+    background-color: rgb(18,18,18);
+    padding:15px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.display{
+width:98.7%;
+position: relative;
+top:52px; 
+    flex-direction: column;
+    min-height: 80vh; 
+    background-color: rgb(30,30,30);
+    border-radius:0px 0px 10px 10px;
+}
+.displayHead{
+    justify-content:space-between;
+    align-items: center;
+}
+.displayHead1
+{
+    color: white;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 25px;
+    margin-top:5px;
+}
+.displayHead2{
+    color:rgb(138,138,138);
+    margin-top:5px;
+    font-size:small;
+    font-weight: bolder;
+    margin-right: 35px;;
+  }
+.cards{
+    padding:10px;
+gap:10px;
+justify-content: space-between;
+flex-wrap: wrap;
+  }
+
+.card1{
+    position: relative;
+    background-color:rgb(22,22,22);
+      margin-top: 20px;
+    height: 251px;
+    width: 167px;
+
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 5px;;
+    
+}
+.card1 img{
+    
+    width: 133px;
+    align-items: center;
+    object-fit: fill;
+    padding: 0px;
+    height: 140px;
+    margin: 17px;
+    border-radius: 10px;    
+}
+.play img{
+    position: absolute;
+    height:50px;
+    width:50px;
+    object-fit: cover;
+    z-index:1;
+    top: 90px;
+    right:0;
+
+}
+.play{
+display: none;
+}
+.card1:hover{
+    .play{
+        display:flex;
+    }
+}
+.discHead{
+    margin-left: 17px;
+    font-weight: bolder;
+}
+/* responsiveness  */
+@media(max-width:1010px)
+{
+    .mainLeft{
+        position: absolute;
+        z-index:2;
+        top:10px;
+        width:200px;
+        position:fixed;
+        display: none;
+
+        
+    }
+    .loginbar{
+       position: fixed;
+        width:95%;
+        }
+        .close{
+            display:flex;
+            cursor:pointer;
+        }
+    .display{
+        top: 40px;
+
+    }
+    .mainRight{
+        width:98%;
+        z-index:1;
+        position: relative;
+        opacity:0.5;
+       
+
+    }
+    .hamburger{
+        display: flex;
+        
+    }
+       .premium,.search,.Support,.signup,.Download,.login,.arrowLeft,.arrowRight,.spotifyLogo,.search,.home,.library{
+        font-size:small;
+    }
+    .displayHead1{
+        font-size: large;
+    }
+.login{
+        padding:0px;
+        border-radius: 10px;
+    }
+} 
+@media(max-width:412px)
+{
+    .premium,.search,.Support,.signup,.Download,.login,.arrowLeft,.arrowRight{
+        font-size:10px;
+    }
+    .displayHead1{
+        font-size: medium;
+    }
+    .displayHead2{
+        font-size:8px ;
+    }
+    .display{
+        top:33px;
+
+    }
+    }
+@media(max-width:320px)
+{
+    .premium,.search,.Support,.signup,.Download,.login,.arrowLeft,.arrowRight{
+        font-size:8px;
+    }
+    .displayHead1{
+        font-size: medium;
+    }
+    .displayHead2{
+        font-size:6px ;
+    }
+    .loginbar{
+        width:91.5%;
+        }
+    }
+    @media(max-width:396px)
+{ .cards{
+    justify-content: space-around;
+}
+
+}
+ 
+/* @media(min-width:1307px)
+{
+    .mainLeft{
+        display:none;
+        
+    }
+    .mainRight{
+        width:98%;
+
+    }
+} */

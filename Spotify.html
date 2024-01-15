@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://fonts.google.com/specimen/Montserrat">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+</head>
+
+<body>
+    <div class="box ">
+        <div class="mainLeft">
+            <div class="mainLeft1 bg-grey ">
+                <div class="spotifyLogo ">
+                    <img class="img1" src="images/spotify-logo-svgrepo-com.svg" alt="no images">
+                    Spotify
+                </div>
+                <div class="home">
+                    <img class="img2" src="images/home-icon-svgrepo-com.svg" alt="">
+                    Home
+                </div>
+                <div class="search">
+                    <img class="img3" src="images/search-svgrepo-com.svg" alt="">
+                    Search
+                </div>
+            </div>
+            <div class="mainLeft2 bg-grey">
+                <div class="Left2content">
+                    <div class="libLogo">
+                        <img src="images/library.svg" alt="">
+                    </div>
+                    <div class="library">
+                        Your Library
+                    </div>
+                    <div class="plus">
+                        +
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainRight bg-grey">
+            <div class="loginbar">
+                <div class="arrowLeft">
+                    < </div>
+                        <div class="arrowRight">
+                            >
+                        </div>
+                        <div class="PSD">
+                            <div class="premium ">
+                                Premium
+                            </div>
+                            <div class="Support ">
+                                Support
+                            </div>
+                            <div class="Download ">
+                                Download
+                            </div>
+                            <div class="signup">
+                                Sign Up
+
+                            </div>
+                            <div class="login">
+                                Log in
+
+                            </div>
+
+                        </div>
+
+
+
+                </div>
+                <div class="display bg-grey">
+                    <div class="displayHead">
+                        <div class="displayHead1">
+                            Spotify Playlists
+                        </div>
+                        <div class="displayHead2">
+                            Show all
+                        </div>
+                    </div>
+                    <div class="cards">
+                    <div class="card1">
+                        <img src="images/card1-image.webp" alt="">
+
+                        <div class="description">
+                            <div class="discHead">
+                                Most Mega Hit
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card2">
+                        <img src="images/card2.png" alt="">
+
+                        <div class="description">
+                            <div class="discHead">
+                                XXX Bests
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <img src="images/card3.jpg" alt="">
+
+                        <div class="description">
+                            <div class="discHead">
+                                Best By Weekend
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card4">
+                        <img src="images/card4.jfif" alt="">
+
+                        <div class="description">
+                            <div class="discHead">
+                                Most Goofy Hits
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card5">
+                        <img src="images/card5.jfif" alt="">
+
+                        <div class="description">
+                            <div class="discHead">
+                                Most Beautiful Hits
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <div class="details bg-grey"></div>
+            </div>
+        </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
